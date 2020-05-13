@@ -1,0 +1,105 @@
+label{
+  font-weight: bold;
+  color: #555;
+}
+.limpid{
+  opacity:0.6;
+}
+.bg-limpid-dark{
+    background-color: rgba(25,25, 25, 0.8);
+}
+.bg-limpid-light{
+  background-color: rgba(255,255,255, 0.8);
+}
+.img-thumbnail{
+    height: 100px;
+}
+.img-s{
+  height:30px;
+}
+.box{
+  width:100%;
+  position: relative;
+  margin-top: 5px;
+}
+.box img{
+  border-radius: 10px;
+}
+.overlay{
+  height:0;
+  transition: .5s ease;
+  position: absolute;
+  text-align: center;
+  background-color: royalblue;
+  width: 100%;
+  bottom: 0;
+  overflow: hidden;;
+}
+.box:hover .overlay{
+  height: 40px;
+  padding: 2px;
+}
+.card a{
+  text-decoration: none;
+}
+.card-footer{
+  background-color: slategray;
+}
+.title{
+  border-left: 7px solid #444;
+  margin:10px 0px 30px 10px;
+  padding: 5px 5px 0 10px;
+  color: #444;
+}
+.scroll{
+  width:96%;
+  overflow: scroll;
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 99; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
